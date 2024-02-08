@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Tutor Calculator";
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/site.js"></script>
+<h1 class="text-center">Coaching Cost Estimator</h1>
+<br/><br/>
+<div class="specialrow">
+	<div class="specialcolumn">
+		<form class="specialcontainer" style="width: 40%">
+			<label for="coachHours">Number of Hours of Coaching: </label><br/>
+			<input type="number" min="1" name="coachHours" id="coachHours"/>
+			<br/><br/>
+			<label for="coachCost">Coach Cost Per Hour ($): <br/></label><br/>
+			<input type="number" name="coachCost" id="coachCost" value="20.50" readonly/>
+			<br/><br/><br/>
+			<button class="button" type="button" id="btnCalculate">Calculate Estimate</button>
+		</form>
+	</div>
+	<div class="specialcolumn">
+		<div class="specialcontainer" style="text-align: center">
+			<h5>Your Amazingly Low Cost: </h5>
+			<br/>
+			<h1 style="font: bold; font-size: 100px" id="costEstimate"></h1>
+			<br/><br/>
+		</div>
+	</div>
+</div>
+<br /><br />
+<!--
+user to enter number of hours needed from me
+validation to make sure they actually entered a positive number
+non-editable box that shows how much you charge per hour
+button to calculate total
+output box that shows the total
+nav back to home page
+-->
